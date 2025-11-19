@@ -1,10 +1,10 @@
-<ol>
+<ol class="[&_li]:mb-1.5">
     @for (chapter of chapters(); track chapter.id) {
         <a routerLink="/ch-{{chapter.id.toString().replaceAll('.', '-')}}">
             <li>{{chapter.id}}. {{chapter.title}}</li>
         </a>
         @if (chapter.subchapters.length > 0) {
-            <app-list [chapters]="chapter.subchapters" />
+            <app-list class="[&>ol]:ml-5" [chapters]="chapter.subchapters" />
         }
     }
 </ol>

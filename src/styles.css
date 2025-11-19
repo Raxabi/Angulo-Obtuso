@@ -1,2 +1,26 @@
 /* You can add global styles to this file, and also import other style files */
 @import "tailwindcss";
+@font-face {
+    font-family: Lexend;
+    src: url(/fonts/LexendDeca-Regular.ttf);
+}
+
+:root{
+    --colorPrincipal: #DE4C36;
+    --fondoPrincipal: #e0a49a;
+}
+
+html, body{
+    height: 100%;
+}
+
+app-root{
+    display: flex;
+    gap: 20px;
+    height: 100%;
+    padding: 20px;
+    font-family: Lexend;
+}
+aside{
+    max-width: 300px;
+}
